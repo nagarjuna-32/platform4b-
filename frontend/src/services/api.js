@@ -1,9 +1,13 @@
 const API_BASE = 'https://full-project-5-kgfu.onrender.com';
 
 export const fetchStations = async () => {
-  const resp = await fetch(`${API_BASE}/trains/stations`);
-  if (!resp.ok) throw new Error('Failed to fetch stations');
-  return resp.json();
+  return [
+    "NDLS",
+    "SBC",
+    "HWH",
+    "BCT",
+    "BPL"
+  ];
 };
 
 export const fetchPosition = async (trainNumber, coach, station) => {
