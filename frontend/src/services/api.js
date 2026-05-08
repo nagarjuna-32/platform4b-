@@ -1,13 +1,7 @@
 const API_BASE = 'https://full-project-5-kgfu.onrender.com';
 
 export const fetchStations = async () => {
-  return [
-    "NDLS",
-    "SBC",
-    "HWH",
-    "BCT",
-    "BPL"
-  ];
+  return ["NDLS", "SBC", "HWH", "BCT", "BPL"];
 };
 
 export const fetchPosition = async (trainNumber, coach, station) => {
