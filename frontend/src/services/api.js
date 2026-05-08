@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://full-project-5-kgfu.onrender.com';
 
 export const fetchStations = async () => {
   const resp = await fetch(`${API_BASE}/trains/stations`);
