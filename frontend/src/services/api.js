@@ -17,4 +17,6 @@ export const fetchGuide = async (trainNumber, coach, station) => {
   const resp = await fetch(`${API_BASE}/api/platformguide/${trainNumber}/${coach}/${station}`);
   if (!resp.ok) throw new Error('Failed to fetch guide');
   return resp.json();
+  if (!resp.ok) throw new Error('Failed to fetch guide');
+  return resp.json();
 };
